@@ -35,8 +35,6 @@
 // Задача 3: Напишите программу, которая принимает на вход целое число из отрезка [10, 99] 
 // и показывает наибольшую цифру числа
 
-using System.Formats.Asn1;
-
 int number = 92;
 int firstDigit = number / 10;
 int secondDigit = number % 10;
@@ -47,4 +45,5 @@ if (firstDigit >= secondDigit)
 else
 {
     Console.WriteLine($"{secondDigit}"); 
-}     
+}   
+  
