@@ -13,22 +13,38 @@
 // Задача 2: Напишите программу, которая принимает на вход координаты точки (X и Y), 
 // причём X ≠ 0 и Y ≠ 0 и выдаёт номер координатной четверти плоскости, в которой находится эта точка
 
-int x = 1;
-int y = -2;
-if (x > 0 && y > 0)
+// int x = 1;
+// int y = -2;
+// if (x > 0 && y > 0)
+// {
+//     Console.WriteLine($"Точка с координатами {x} : {y} находится в I четверти");
+// }
+// else if (x < 0 && y > 0)
+// {
+//     Console.WriteLine($"Точка с координатами {x} : {y} находится во II четверти");
+// }
+// else if (x < 0 && y < 0)
+// {
+//     Console.WriteLine($"Точка с координатами {x} : {y} находится в III четверти");
+// }
+// else if (x > 0 && y < 0)
+// {
+//     Console.WriteLine($"Точка с координатами {x} : {y} находится в IV четверти");
+// }
+
+// Задача 3: Напишите программу, которая принимает на вход целое число из отрезка [10, 99] 
+// и показывает наибольшую цифру числа
+
+using System.Formats.Asn1;
+
+int number = 92;
+int firstDigit = number / 10;
+int secondDigit = number % 10;
+if (firstDigit >= secondDigit)
 {
-    Console.WriteLine($"Точка с координатами {x} : {y} находится в I четверти");
+   Console.WriteLine($"{firstDigit}"); 
 }
-else if (x < 0 && y > 0)
+else
 {
-    Console.WriteLine($"Точка с координатами {x} : {y} находится во II четверти");
-}
-else if (x < 0 && y < 0)
-{
-    Console.WriteLine($"Точка с координатами {x} : {y} находится в III четверти");
-}
-else if (x > 0 && y < 0)
-{
-    Console.WriteLine($"Точка с координатами {x} : {y} находится в IV четверти");
-}
-    
+    Console.WriteLine($"{secondDigit}"); 
+}     
