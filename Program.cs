@@ -50,12 +50,12 @@
 // Задача 4: Напишите программу, которая на вход принимает натуральное число N, 
 // а на выходе показывает его цифры через запятую  
 
-int number = 6854972;
-string result = string.Format(" ");
-while (number > 0)
-{
-   int viewDigit = number % 10;
-   number = number /10;
-   result = viewDigit.ToString() + ", " + result;  
-}
-Console.Write(result);
+// int number = 6854972;
+// string result = string.Format(" ");
+// while (number > 0)
+// {
+//    int viewDigit = number % 10;
+//    number = number /10;
+//    result = viewDigit.ToString() + ", " + result;  
+// }
+// Console.Write(result);
